@@ -19,7 +19,9 @@ Criar a pasta "db" dentro da pasta onde está o arquivo  IMDbSearcher-all.jar
 Copiar o archivo de banco de dados "imdb.db" na pasta "db"
 
 A instalação deverá ter a seguinte estrutura:
+
 IMDbSearcher-all.jar
+
 db\imdb.db
 
 
