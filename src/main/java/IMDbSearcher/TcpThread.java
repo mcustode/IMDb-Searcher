@@ -23,18 +23,33 @@ public class TcpThread extends Thread {
             OutputStream output = socket.getOutputStream();
             PrintWriter writer = new PrintWriter(output, true);
            // SQLiteDB db = new SQLiteDB();
-             writer.println("Digite o texto a pesquisar ou digite \"sair\" e pressione Enter ");
+         //    writer.println("Digite o texto a pesquisar ou digite \"sair\" e pressione Enter ");
  
-            String text;
+            String tcpQuery;
  
             do {
-                text = reader.readLine();
+            	tcpQuery = reader.readLine();
                 
-                String payload = processQuery(text);
+                String[] queryData = tcpQuery.split(":");
+                
+                if (queryData.length != 2) {
+                	writer.println("48:ERRO|Consulta incorreta, enviar Tamanho:Consulta" );
+                	continue;	
+                }
+
+                Integer querySize = Integer.valueOf(queryData[0]);
+                
+                if (! querySize.equals(queryData[1].length())) {
+                	writer.println("48:ERRO|Tamanho incorreto, enviar Tamanho:Consulta" );
+                	continue;	
+                }
+
+                
+                String payload = processQuery(queryData[1]);
                 
             	writer.println(payload.length() + ":" + payload);
  
-            } while (!text.equals("sair"));
+            } while (!tcpQuery.equals("sair"));
  
             socket.close();
         } catch (IOException ex) {
@@ -44,6 +59,7 @@ public class TcpThread extends Thread {
     }
     
     public String processQuery(String query) {
+   
     	
         if ( query.length() < 3 ) {
         	return ("ERRO:Escreva pelo menos 3 caracteres");
