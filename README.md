@@ -19,17 +19,21 @@ Sera gerado o arquivo "IMDbSearcher.jar" na pasta "build\lib" Este arquivo já t
 
 <h1>Uso</h1>
 
-<b>iniciar servidor:</b>
+<b>iniciar serviço:</b>
 
 java -jar IMDbSearcher.jar [porta IP]
+
+Exemplo: java -jar IMDbSearcher.jar 3300
 
 <b>cliente:</b>
 
 Para testar utilizar Telnet, Putty ou otro cliente TCP/IP, conectar no IP do servidor usando a porta IP
 
+Exemplo windows: Telnet localhost 3300
+
 Após conectar enviar as consultas com a seguinte estrutura:
 
-Tamanho da mensagem:mensagem
+Tamanho da mensagem:texto a pesquisar
 
 Por exemplo:
 
@@ -37,7 +41,7 @@ Por exemplo:
 
 O servidor responderá com uma lista de filmes no mesmo formato da consulta:
 
-Tamanho da mensagem:mensagem
+Tamanho da resposta:resposta
 
 Por exemplo:
 
