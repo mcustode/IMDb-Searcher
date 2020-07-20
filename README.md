@@ -4,7 +4,7 @@ Projeto de teste para fazer a pesquisa dos títulos da IMBd
 Compilado para "jdk-14.0.2"
 
 <p>Este serviço retorna apenas filmes e utiliza o metodo de consulta por texto similar</p> 
-<p>O serviço funciona lendo as páginas de pesquisa do site do IMDb, por isto seu funcionamento depende de não existirem mudanças na estrutura dos objetos HTML existentes atualmente no site</p>
+<p>O serviço funciona lendo as páginas de pesquisa do site do IMDb, por isto seu funcionamento depende de não existirem grandes mudanças na estrutura dos objetos HTML existentes atualmente no site</p>
 
 <b>Criação do jar</b>
 
