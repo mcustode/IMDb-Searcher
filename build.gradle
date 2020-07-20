@@ -12,7 +12,7 @@ plugins {
 }
 
 //MainClass:
-String mainClass = 'IMDbSearcher.TcpListener'
+String mainClass = 'imdb.searcher.TcpListener'
 //Arquivo de configuração properties do servidor. (se necessário)
 File fileProperties = new File('../server.properties');
 //Configuração padrão do manifest.
@@ -71,7 +71,7 @@ jar {
 task fatJar(type: Jar, group: "build") {
     manifest = myManifest
     archiveBaseName = project.name
-    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    from { configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
 }
  
