@@ -23,6 +23,8 @@ Sera gerado o arquivo "IMDbSearcher.jar" na pasta "build\lib" Este arquivo já t
 
 java -jar IMDbSearcher.jar [porta IP]
 
+<b>cliente:</b>
+
 Para testar utilizar Telnet, Putty ou otro cliente TCP/IP, conectar no IP do servidor usando a porta IP
 
 Após conectar enviar as consultas com a seguinte estrutura:
