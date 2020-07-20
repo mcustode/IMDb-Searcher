@@ -39,17 +39,15 @@ Tamanho da mensagem:mensagem
 
 Por exemplo:
 
-<ul>
-  <li>5422:Carros (2006)</li>
-Carros 3 (2017)
-Carros 2 (2011)
-Carruagens de Fogo (1981) aka "Carrozas de fuego"
-Carros Usados (1980)
-Operação Red Sparrow (2018)
-Carrie, a Estranha (1976)
-Carrie, a Estranha (2013)
+5422:Carros (2006)</br>
+Carros 3 (2017)</br>
+Carros 2 (2011)</br>
+Carruagens de Fogo (1981) aka "Carrozas de fuego"</br>
+Carros Usados (1980)</br>
+Operação Red Sparrow (2018)</br>
+Carrie, a Estranha (1976)</br>
+Carrie, a Estranha (2013)</br>
 ...
-</ul>
 
 Para finalizar a conexão, enviar x
 
