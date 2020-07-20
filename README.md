@@ -39,7 +39,8 @@ Tamanho da mensagem:mensagem
 
 Por exemplo:
 
-5422:Carros (2006)
+<ul>
+  <li>5422:Carros (2006)</li>
 Carros 3 (2017)
 Carros 2 (2011)
 Carruagens de Fogo (1981) aka "Carrozas de fuego"
@@ -48,6 +49,7 @@ Operação Red Sparrow (2018)
 Carrie, a Estranha (1976)
 Carrie, a Estranha (2013)
 ...
+</ul>
 
 Para finalizar a conexão, enviar x
 
