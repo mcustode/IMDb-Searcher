@@ -15,7 +15,7 @@ Sera gerado o arquivo "IMDbSearcher.jar" na pasta "build\lib" Este arquivo já t
 
 
 
-<b>Uso</b>
+<h1>Uso</h1>
 
 <b>iniciar servidor:</b>
 
@@ -36,6 +36,7 @@ O servidor responderá com uma lista de filmes no mesmo formato da consulta:
 Tamanho da mensagem:mensagem
 
 Por exemplo:
+
 5422:Carros (2006)
 Carros 3 (2017)
 Carros 2 (2011)
