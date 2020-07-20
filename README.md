@@ -7,26 +7,50 @@ Compilado para "jdk-14.0.2"
 
 Na pasta do projeto executar:
 
-./gradle clean
+./gradlew clean
 
-./gradle fatjar
+./gradlew fatjar
 
-Sera gerado o arquivo "IMDbSearcher-all.jar" na pasta "build\lib" Este arquivo já terá todas as bibliotecas necessárias para a execução
+Sera gerado o arquivo "IMDbSearcher.jar" na pasta "build\lib" Este arquivo já terá todas as bibliotecas necessárias para a execução
 
-
-<b>Instalação</b>
-
-Criar a pasta "db" dentro da pasta onde está o arquivo  IMDbSearcher-all.jar
-Copiar o archivo de banco de dados "imdb.db" na pasta "db"
-
-A instalação deverá ter a seguinte estrutura:
-
-IMDbSearcher-all.jar
-
-db\imdb.db
 
 
 <b>Uso</b>
 
-java -jar IMDbSearcher-all.jar [porta IP]
+<b>iniciar servidor:</b>
+
+java -jar IMDbSearcher.jar [porta IP]
+
+Para testar utilizar Telnet, Putty ou otro cliente TCP/IP, conectar no IP do servidor usando a porta IP
+
+Após conectar enviar as consultas com a seguinte estrutura:
+
+Tamanho da mensagem:mensagem
+
+Por exemplo:
+
+4:carro
+
+O servidor responderá com uma lista de filmes no mesmo formato da consulta:
+
+Tamanho da mensagem:mensagem
+
+Por exemplo:
+5422:Carros (2006)
+Carros 3 (2017)
+Carros 2 (2011)
+Carruagens de Fogo (1981) aka "Carrozas de fuego"
+Carros Usados (1980)
+Operação Red Sparrow (2018)
+Carrie, a Estranha (1976)
+Carrie, a Estranha (2013)
+...
+
+Para finalizar a conexão, enviar x
+
+
+
+
+
+
 
