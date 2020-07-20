@@ -1,7 +1,9 @@
-<b>IMDb-Searcher</b>
+<h1>IMDb-Searcher</h1>
 
 Projeto de teste para fazer a pesquisa dos títulos da IMBd
 Compilado para "jdk-14.0.2"
+
+<p>Este serviço retorna apenas filmes e utiliza o metodo de consulta por texto similar, não mostra apenas valores exatos</p>
 
 <b>Criação do jar</b>
 
