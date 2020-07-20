@@ -31,7 +31,7 @@ Tamanho da mensagem:mensagem
 
 Por exemplo:
 
-4:carro
+5:carro
 
 O servidor responderá com uma lista de filmes no mesmo formato da consulta:
 
