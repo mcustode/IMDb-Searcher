@@ -6,7 +6,7 @@ Serviço de teste para fazer a pesquisa dos títulos da IMBd
 <p>O serviço funciona lendo as páginas de pesquisa do site do IMDb, por isto seu funcionamento depende de não existirem grandes mudanças na estrutura dos objetos HTML existentes atualmente no site</p>
 Compilado para "jdk-14.0.2"
 
-<b>Criação do jar</b>
+<h2>Criação do jar</h2>
 
 Na pasta do projeto executar:
 
