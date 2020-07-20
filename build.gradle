@@ -6,8 +6,6 @@
  * User Manual available at https://docs.gradle.org/6.3/userguide/java_library_plugin.html
  */
 
-
-
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
@@ -41,15 +39,11 @@ dependencies {
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
     
-    // Dependencia do Guice
-    compile group: 'com.google.inject', name: 'guice', version: '4.1.0'
+    // Dependencia do JSOUP
+    implementation 'org.jsoup:jsoup:1.13.1'
     
-    // Dependencia do SQLite
-    compile group:'org.xerial', name:'sqlite-jdbc', version:'3.8.11.2'
-    
-     compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
 }
-
 
 /**
  * Task responsavel pela execução do MainClass diretamente do projeto.
@@ -65,7 +59,7 @@ task execute(type: JavaExec) {
 jar {
     manifest {
         manifest = myManifest
-        manifest.attributes "Class-Path": configurations.compile.collect {
+        manifest.attributes "Class-Path": configurations.compileClasspath.collect {
             'libs/' + it.getName()
         }.join(' ')
     }
@@ -76,7 +70,7 @@ jar {
  */
 task fatJar(type: Jar, group: "build") {
     manifest = myManifest
-    baseName = project.name + '-all'
+    archiveBaseName = project.name
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
 }
