@@ -40,6 +40,8 @@ Por exemplo:
 
 5:carro
 
+(Obs: Não é necessário pressionar Enter)
+
 O servidor responderá com uma lista de filmes no mesmo formato da consulta:
 
 Tamanho da resposta:resposta
