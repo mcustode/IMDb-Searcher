@@ -18,7 +18,7 @@ Sera gerado o arquivo "IMDbSearcher.jar" na pasta "build\lib" Este arquivo já t
 
 
 
-<h1>Uso</h1>
+<h2>Uso</h2>
 
 <b>iniciar serviço:</b>
 
