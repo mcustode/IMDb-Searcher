@@ -8,6 +8,7 @@ Compilado para "jdk-14.0.2"
 Na pasta do projeto executar:
 
 ./gradle clean
+
 ./gradle fatjar
 
 Sera gerado o arquivo "IMDbSearcher-all.jar" na pasta "build\lib" Este arquivo já terá todas as bibliotecas necessárias para a execução
